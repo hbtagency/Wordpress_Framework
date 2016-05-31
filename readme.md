@@ -1,3 +1,18 @@
+# Wordpress_Framework
+Wordpress Gulp Framework
+
+#####- Place this repo under wp-content/themes
+#####- Add plugins (revslider and js_composer)
+
+Modify
+
+#####- gulpconfig.js (proxy, JavaScript)
+#####- index.php (container class<Bootstrap Container>)
+#####- header.php
+#####- footer.php
+#####- scss/style.scss
+
+
 # A WORDPRESS/GULP STARTER KIT
 
 Designing WordPress themes the old-fashioned way is time-consuming and error-prone. Automating the build process allows us to integrate best practices into our workflow while saving time. This project is a *starter kit* for developing highly optimized WordPress themes with [Gulp](http://gulpjs.com/), [npm](https://www.npmjs.com/), and [Sass](http://sass-lang.com/), among other tools. This is *not* meant to be a starter theme or framework (although I have included a *minimum viable theme* to demonstrate some of the possibilities). It is, instead, a kind of *project scaffolding* and *example workflow* for modern and efficient WordPress theme development.

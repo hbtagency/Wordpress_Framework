@@ -19,7 +19,7 @@ module.exports = {
   , notify: false // In-line notifications (the blocks of text saying whether you are connected to the BrowserSync server or not)
   , open: true // Set to false if you don't like the browser window opening automatically
   , port: 3000 // Port number for the live version of the site; default: 3000
-  , proxy: 'localhost/marketingacumen/' // We need to use a proxy instead of the built-in server because WordPress has to do some server-side rendering for the theme to work
+  , proxy: 'localhost/wordpress_framework/' // We need to use a proxy instead of the built-in server because WordPress has to do some server-side rendering for the theme to work
   , watchOptions: {
       debounceDelay: 2000 // This introduces a small delay when watching for file change events to avoid triggering too many reloads
     }
@@ -54,9 +54,14 @@ module.exports = {
       // The core chunk is loaded no matter what; put essential scripts that you want loaded by your theme in here
       core: [
         modules+'timeago/jquery.timeago.js' // The modules directory contains packages downloaded via npm
+      
+      //Custom JavaScript
+      //Addding new js should run gulp again 
       , src+'js/responsive-menu.js'
       , src+'js/core.js'
       , src+'js/footer-socials.js'
+      //End of Custom JavaScript
+
       ]
       // The pageloader chunk provides an example of how you would add a user-configurable feature to your theme; you can delete this if you wish
       // Have a look at the `src/inc/assets.php` to see how script bundles could be conditionally loaded by a theme

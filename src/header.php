@@ -62,6 +62,7 @@
          </div>
       </div>
       <?php
+      /*
         if(is_front_page()){         
             echo do_shortcode("[rev_slider main-slider]");
         }else{?>
@@ -73,6 +74,7 @@
                  </div>
             </div>
         <?php }
+        */
       ?>
   </header>  
 

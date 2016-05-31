@@ -1,19 +1,19 @@
 <?php get_header(); ?>
   <div id="wrap-content" class="wrap-content">
     <div id="content" class="site-content">
-      <!--  
+       
       <section id="primary" class="content-area">
-        <main id="main" class="site-main">
+        <main id="main" class="site-main container">
         <?php if ( have_posts() ) {
           while ( have_posts() ) : the_post(); ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article">
               <header class="entry-header">
                 <h1><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
               </header>
-              <footer class="entry-meta">
+              <!-- <footer class="entry-meta">
                 <?php printf( __( 'Posted <time datetime="%1$s">%2$s</time> by %3$s. ', 'voidx' ), get_post_time('c'), get_the_date(), get_the_author() ); ?>
                 <?php _e( 'Categories: ', 'voidx' ); the_category( ', ' ); echo '. '; ?>
-              </footer>
+              </footer> -->
               <div class="entry-content">
                 <?php the_content(); ?>
                 <?php wp_link_pages(); ?>
@@ -33,7 +33,7 @@
         <?php } ?>
         </main>
         <?php voidx_post_navigation(); ?>
-      </section>-->
+      </section>
     </div>
   </div>
 <?php //get_sidebar(); ?>

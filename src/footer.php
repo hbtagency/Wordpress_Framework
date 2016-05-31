@@ -10,7 +10,7 @@
                 echo $content;
              ?>
              <div class="footer-bottom">
-                 <div class="footer-bottom-left pull-left">
+                 <!-- <div class="footer-bottom-left pull-left">
                      <?php
                                 wp_nav_menu( array(
                                     'menu'              => 'footer',
@@ -23,12 +23,12 @@
                                     'walker'            => new wp_bootstrap_navwalker())
                                 );
                             ?>
-                 </div>
-                 <div class="footer-bottom-right pull-right">
+                 </div> --> 
+                 <!-- <div class="footer-bottom-right pull-right">
                      <span class="copyright">
                          Copyright 2015. Market Acumen
                      </span>
-                 </div>
+                 </div> -->
              </div>
          </div>
     </footer>
